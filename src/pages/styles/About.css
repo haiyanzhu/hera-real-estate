@@ -1,0 +1,142 @@
+
+
+/* Resetting default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling main container */
+#maindiv {
+    position: relative; /* Make it a relative container for absolute positioning */
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide into two columns */
+    gap: 20px; /* Spacing */
+}
+
+/* Styling individual divs */
+.mydiv {
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.mydiv:hover {
+    transform: scale(1.05); /* You can adjust the scale factor as needed */
+}
+
+/* Styling heading tags */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling paragraph tags */
+.insidep {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Set the number of elements in each column */
+/* Set the number of elements in each column */
+.mydiv:nth-child(-n+3) {
+    grid-column: 1; /* Elements from the first column */
+}
+
+.mydiv:nth-child(n+4) {
+    grid-column: 2; /* Elements from the second column */
+}
+
+/* Set the grid row for the elements */
+.mydiv:nth-child(1),
+.mydiv:nth-child(4) {
+    grid-row: 1; /* Elements from the first row */
+}
+
+.mydiv:nth-child(2),
+.mydiv:nth-child(5) {
+    grid-row: 2; /* Elements from the second row */
+}
+
+.mydiv:nth-child(3),
+.mydiv:nth-child(6) {
+    grid-row: 3; /* Elements from the third row */
+}
+
+.mydiv:nth-child(7) {
+    grid-row: 4; /* Elements from the fourth row */
+}
+
+
+
+
+/* Styling for the background image */
+#background-image {
+    position: absolute;
+    width: 38%;
+    height: 50%;
+    top: 40%;
+    left: 11%;
+    z-index: -1; /* Ensure it's behind the content */
+    background-image: url('https://wallpapers.com/images/high/dream-house-pictures-1600-x-1200-5e6lhgh2yki2mmbl.webp'); /* Replace 'your-image-url.jpg' with the actual URL of your image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    #maindiv {
+        grid-template-columns: repeat(1, 1fr); /* Change to single column layout on small screens */
+    }
+}
+
+
+
+
+/* #maindiv {
+    margin-left: 30px;
+    align-content: center;
+    background-color: white;
+} 
+
+.mydiv {
+    display: block;
+} */
+
+
+
+
+
+/* .mydiv {
+    position: relative;
+} */
+
+
+/* .mydiv::before {
+    content: "";
+    background-image: url("https://i.postimg.cc/6QvHKDsh/view-of-modern-business-skyscrapers-glass-and-sky-view-landscape-of-commercial-building-in-central-c.png"); 
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    background-color: #253B44;
+}
+
+h2 {
+    color:red;
+}
+
+
+.insidep {
+    border-style: ridge;
+    background-color:color(from color srgb r g b);
+} */

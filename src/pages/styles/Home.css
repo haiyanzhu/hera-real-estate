@@ -1,0 +1,47 @@
+.main {
+    margin-left: 30px;
+    display: grid;
+    min-height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    /* background-image: url("https://i.postimg.cc/6QvHKDsh/view-of-modern-business-skyscrapers-glass-and-sky-view-landscape-of-commercial-building-in-central-c.png"); */
+}
+
+/*can use relative and set left(leftshift) right(rightshift) top(up shift) bottom(down shift) so if you set left, can't set right as well, same as the vertical direction*/
+/*
+让内部的absolute position 放在它内部，而不是放在body 的内部*/
+.home-div {
+    position: relative; 
+}
+    
+
+/* using position: absolute, will think this compoment does not even exist, and it can cause overlapping */
+.home-div::before {
+    content: "This is the before content";
+    background-image: url("https://i.postimg.cc/6QvHKDsh/view-of-modern-business-skyscrapers-glass-and-sky-view-landscape-of-commercial-building-in-central-c.png");
+    background-size: cover;
+     /* the following position set will let it cover all the position just like it's parent, which cause the total overlapping of the graph;  */
+    position: absolute;
+    top: 0px;
+    bottom:0px;
+    left: 0px;
+    right:0px;
+    opacity:0.5;
+    background-color: #253B44;
+} 
+
+
+
+h1 {
+    color:#253B44;
+}
+
+.homeP {
+    grid-row: 2/span1;
+    grid-column: 1/3;
+    z-index: 1;
+}
+
+h1{
+    grid-column: 1/span3;
+}

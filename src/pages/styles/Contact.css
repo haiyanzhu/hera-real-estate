@@ -1,0 +1,103 @@
+/* styles.css */
+
+.contactdiv {
+    font-family: Arial, sans-serif;
+    width: 90%;
+    margin: 0 auto; /* Center align horizontally */
+    padding: 10px;
+    background-color: #f9f9f9; /* Background color for the entire component */
+    /* border-radius: 10px; Add border radius for rounded corners */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
+  }
+  
+  .myheading {
+	background: url('https://marketplace.canva.com/EAEthkBVLfQ/1/0/1600w/canva-blush-wave-desktop-wallpaper-drvq3zaYl2E.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	/* position: relative; */
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+
+
+  .h2name {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  .h2name:hover {
+    color: #871313;
+  }
+  
+  .divItem {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-left: solid;
+    border-right: solid;
+    border-left-color: rgb(170, 50,220);
+    border-right-color:  rgb(170, 50,220);
+    background-color: #dbe6de;
+    /* padding: 10px; */
+    padding: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: auto; /* Center align by pushing to the right */
+    margin-right: auto; /* Center align by pushing to the left */
+  }
+  
+  .divItem:hover {
+    color: #5a0404;
+    transform: scale(1.05);
+  }
+
+  .title {
+    font-size: 24px;
+    color: rgba(0, 208, 255, 0.703);
+    display: inline-block;
+  }
+  
+  .divItem:last-child {
+    border-bottom: none;
+  }
+  
+  .divItem h3 {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .divItem p {
+    margin: 5px 0;
+  }
+  
+  .divItem a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .divItem a:hover {
+    color: #0056b3;
+  }
+  
+  .divItem h4 {
+    color: #444;
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
+  
+  .divItem h4:first-child {
+    margin-top: 0;
+  }
+
+  /* .divItem-faq{
+   display: inline-flex;
+   //display: flex; 
+  } */
+  
